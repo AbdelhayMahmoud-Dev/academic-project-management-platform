@@ -1,0 +1,4 @@
+/* Global overrides for SaaS layout */
+html, body {
+  height: 100%;
+}

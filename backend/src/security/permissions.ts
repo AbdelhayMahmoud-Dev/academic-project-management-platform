@@ -1,0 +1,5 @@
+export const PERMISSIONS = {
+  USER_READ: 'user.read',
+  USER_WRITE: 'user.write',
+  PROJECT_MANAGE: 'project.manage',
+};

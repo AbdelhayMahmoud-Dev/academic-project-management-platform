@@ -1,0 +1,23 @@
+<ds-page-wrapper>
+  <ds-card>
+    <form class="space-y-4" (ngSubmit)="submit()" [formGroup]="form">
+      <h2 class="text-xl font-semibold">Login</h2>
+
+      <ds-input
+        type="email"
+        placeholder="Email"
+        formControlName="email"
+      ></ds-input>
+
+      <ds-input
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+      ></ds-input>
+
+      <ds-button [loading]="loading()">
+        Login
+      </ds-button>
+    </form>
+  </ds-card>
+</ds-page-wrapper>

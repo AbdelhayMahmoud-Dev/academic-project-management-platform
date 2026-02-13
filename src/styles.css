@@ -1,0 +1,12 @@
+:root {
+  --ds-bg: #0f172a;
+  --ds-text: #e2e8f0;
+  --ds-primary: #6366f1;
+  --ds-header-bg: #111827;
+  --ds-sidebar-bg: #0b1220;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui;
+}

@@ -1,0 +1,25 @@
+<ds-page-wrapper>
+  <ds-card>
+    <div class="space-y-6 max-w-xl">
+      <h2 class="text-xl font-semibold">My Profile</h2>
+
+      <ds-input
+        placeholder="Name"
+        [formControl]="form.controls.name"
+      ></ds-input>
+
+      <ds-input
+        placeholder="Email"
+        [formControl]="form.controls.email"
+      ></ds-input>
+
+      <ds-input
+        type="password"
+        placeholder="New Password"
+        [formControl]="form.controls.password"
+      ></ds-input>
+
+      <ds-button (click)="save()">Save Changes</ds-button>
+    </div>
+  </ds-card>
+</ds-page-wrapper>

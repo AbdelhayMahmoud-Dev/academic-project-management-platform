@@ -1,0 +1,20 @@
+<ds-page-wrapper>
+  <ds-card>
+    <div class="space-y-4">
+      <div class="flex justify-between items-center">
+        <h2 class="text-xl font-semibold">Audit Logs</h2>
+
+        <ds-input
+          type="text"
+          placeholder="Search logs..."
+          (dsChange)="onSearch($event)"
+        ></ds-input>
+      </div>
+
+      <ds-table
+        [columns]="columns"
+        [data]="engine.rows"
+      ></ds-table>
+    </div>
+  </ds-card>
+</ds-page-wrapper>

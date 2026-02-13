@@ -1,0 +1,7 @@
+<div *ngIf="modal.modal()" class="fixed inset-0 bg-black/60 flex items-center justify-center">
+  <div class="bg-white p-6 rounded w-[500px]">
+    <h2 class="font-semibold mb-4">{{ modal.modal()?.title }}</h2>
+    <ng-container *ngComponentOutlet="modal.modal()?.content"></ng-container>
+    <button class="mt-4" (click)="modal.close()">Close</button>
+  </div>
+</div>

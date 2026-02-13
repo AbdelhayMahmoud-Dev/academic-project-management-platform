@@ -1,0 +1,14 @@
+<div class="space-y-6">
+  <div>
+    <h1 class="text-2xl font-semibold">{{ title }}</h1>
+    <p *ngIf="subtitle" class="text-sm opacity-70">{{ subtitle }}</p>
+  </div>
+
+  <ds-loading *ngIf="loading" />
+
+  <ds-error-state *ngIf="error" />
+
+  <ds-empty *ngIf="empty && !loading && !error" />
+
+  <ng-content *ngIf="!loading && !error && !empty"></ng-content>
+</div>

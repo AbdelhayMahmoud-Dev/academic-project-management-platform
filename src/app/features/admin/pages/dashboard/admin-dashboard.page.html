@@ -1,0 +1,17 @@
+<ds-page-wrapper>
+  <ds-card>
+    <div class="space-y-6">
+      <h2 class="text-xl font-semibold">Admin Dashboard</h2>
+
+      <div class="grid grid-cols-4 gap-4">
+        <div
+          *ngFor="let stat of stats()"
+          class="bg-white/5 border border-white/10 rounded p-4 text-center"
+        >
+          <div class="text-sm opacity-60">{{ stat.label }}</div>
+          <div class="text-2xl font-semibold">{{ stat.value }}</div>
+        </div>
+      </div>
+    </div>
+  </ds-card>
+</ds-page-wrapper>
